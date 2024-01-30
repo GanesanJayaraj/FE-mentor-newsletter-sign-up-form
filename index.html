@@ -8,8 +8,8 @@
     <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
-    <main class="flex flex-row jc-center align-center">
-        <section class="container-left flex flex-column jc-center align-center" style="padding: 36px;">
+    <main class="flex flex-row jc-center align-center" id="main" style="max-width: 1024px;max-height: 924px; gap: 2rem;">
+        <section class="container-left flex flex-column jc-center" style="padding: 36px 0px;">
             <h2>Stay updated!</h2>
             <p>Join 60,000+ product managers receiving monthly updates on:</p>
             <ul style="width: 100%;">
@@ -29,12 +29,19 @@
             <form action="" class="flex flex-column jc-center">
                 <label for="email">Email address</label>
                 <input type="text" name="email" id="email" placeholder="email@company.com">
-                <button type="submit">Subscribe to monthly newsletter</button>
+                <button type="submit" id="sub-btn">Subscribe to monthly newsletter</button>
             </form>
         </section>
         <section class="container-right">
         </section>
     </main>
+    <section class="modal" style="gap: 2rem;" id="modal">
+        <img src="assets/images/icon-success.svg" alt="">
+        <h2 class="h2">Thanks for subscribing!</h2>
+        <p class="append-mail">
+        </p>
+        <button type="submit" id="sub-btn-dis">Dismiss message</button>
+    </section>
     <script src="js/index.js" defer></script>
 </body>
 </html>
